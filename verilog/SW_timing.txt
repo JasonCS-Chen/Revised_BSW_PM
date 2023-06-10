@@ -1,0 +1,140 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : SW
+Version: U-2022.12
+Date   : Thu May 11 01:25:48 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MA_p_r_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SW                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  state_reg[3]/CK (DFFRX4)                                0.00       1.00 r
+  state_reg[3]/Q (DFFRX4)                                 0.37       1.37 f
+  U2140/Y (BUFX20)                                        0.08       1.45 f
+  U4360/Y (AOI32X2)                                       0.16       1.61 r
+  U4361/Y (NAND2BX4)                                      0.11       1.72 f
+  U2146/Y (NAND2X4)                                       0.13       1.85 r
+  U2147/Y (BUFX16)                                        0.10       1.95 r
+  U2149/Y (BUFX20)                                        0.07       2.02 r
+  U2152/Y (BUFX20)                                        0.10       2.12 r
+  U2161/Y (CLKINVX16)                                     0.07       2.20 f
+  U2172/Y (AO22X1)                                        0.25       2.44 f
+  PEs[1].u_PE_single/I_in[2] (PE_15)                      0.00       2.44 f
+  PEs[1].u_PE_single/U339/Y (CLKINVX1)                    0.14       2.59 r
+  PEs[1].u_PE_single/U130/Y (NAND2X6)                     0.07       2.66 f
+  PEs[1].u_PE_single/U117/Y (CLKINVX8)                    0.05       2.70 r
+  PEs[1].u_PE_single/U302/Y (AO21XL)                      0.43       3.13 r
+  PEs[1].u_PE_single/U326/Y (NAND2BX1)                    0.13       3.26 f
+  PEs[1].u_PE_single/U265/Y (OAI21X2)                     0.11       3.37 r
+  PEs[1].u_PE_single/U303/Y (OAI2BB1X2)                   0.08       3.45 f
+  PEs[1].u_PE_single/U296/Y (AOI2BB1X2)                   0.17       3.62 f
+  PEs[1].u_PE_single/U266/Y (OAI211X2)                    0.14       3.76 r
+  PEs[1].u_PE_single/U132/Y (OAI221X1)                    0.12       3.89 f
+  PEs[1].u_PE_single/U299/Y (OAI2BB1X4)                   0.15       4.04 f
+  PEs[1].u_PE_single/U261/Y (AND2X8)                      0.14       4.18 f
+  PEs[1].u_PE_single/U280/Y (AO22X1)                      0.21       4.38 f
+  PEs[1].u_PE_single/U205/Y (CLKBUFX3)                    0.24       4.62 f
+  PEs[1].u_PE_single/U213/Y (NOR2X4)                      0.17       4.79 r
+  PEs[1].u_PE_single/U223/Y (OAI21X4)                     0.08       4.87 f
+  PEs[1].u_PE_single/U129/Y (NOR2X2)                      0.10       4.97 r
+  PEs[1].u_PE_single/U162/Y (NAND2X2)                     0.07       5.04 f
+  PEs[1].u_PE_single/U209/Y (AND3X6)                      0.11       5.15 f
+  PEs[1].u_PE_single/U136/Y (OR2X6)                       0.13       5.28 f
+  PEs[1].u_PE_single/U75/Y (INVX20)                       0.06       5.34 r
+  PEs[1].u_PE_single/U70/Y (NAND2X2)                      0.07       5.41 f
+  PEs[1].u_PE_single/U71/Y (NAND2X6)                      0.09       5.50 r
+  PEs[1].u_PE_single/U73/Y (CLKINVX12)                    0.05       5.55 f
+  PEs[1].u_PE_single/U78/Y (OAI21X4)                      0.10       5.65 r
+  PEs[1].u_PE_single/U30/Y (AOI21X4)                      0.06       5.71 f
+  PEs[1].u_PE_single/U240/Y (NOR2X6)                      0.08       5.79 r
+  PEs[1].u_PE_single/U237/Y (NAND3X8)                     0.11       5.91 f
+  PEs[1].u_PE_single/U36/Y (NAND2X2)                      0.14       6.05 r
+  PEs[1].u_PE_single/U234/Y (NAND4X8)                     0.09       6.14 f
+  PEs[1].u_PE_single/U92/Y (CLKINVX6)                     0.07       6.21 r
+  PEs[1].u_PE_single/U16/Y (OAI21X4)                      0.05       6.27 f
+  PEs[1].u_PE_single/U243/Y (AOI2BB2X4)                   0.17       6.44 r
+  PEs[1].u_PE_single/H_out[1] (PE_15)                     0.00       6.44 r
+  max0/H1[1] (MA16)                                       0.00       6.44 r
+  max0/max_sub_0/H1[1] (MA4_0)                            0.00       6.44 r
+  max0/max_sub_0/U27/Y (CLKINVX2)                         0.14       6.58 f
+  max0/max_sub_0/U40/Y (NAND2X2)                          0.14       6.72 r
+  max0/max_sub_0/U22/Y (INVX3)                            0.05       6.77 f
+  max0/max_sub_0/U114/Y (AOI2BB1X4)                       0.13       6.90 f
+  max0/max_sub_0/U91/Y (OAI211X2)                         0.17       7.07 r
+  max0/max_sub_0/U1/Y (NAND2X4)                           0.08       7.15 f
+  max0/max_sub_0/U57/Y (INVX12)                           0.08       7.23 r
+  max0/max_sub_0/U68/Y (MX2X6)                            0.20       7.43 r
+  max0/max_sub_0/U66/Y (INVX6)                            0.06       7.49 f
+  max0/max_sub_0/U15/Y (NAND2X8)                          0.06       7.54 r
+  max0/max_sub_0/U113/Y (OAI211X2)                        0.08       7.62 f
+  max0/max_sub_0/U76/Y (AOI2BB1X2)                        0.11       7.74 r
+  max0/max_sub_0/U121/Y (OAI32X2)                         0.09       7.83 f
+  max0/max_sub_0/U134/Y (NAND3BX4)                        0.13       7.96 f
+  max0/max_sub_0/U104/Y (INVX12)                          0.10       8.06 r
+  max0/max_sub_0/U5/Y (CLKMX2X6)                          0.18       8.25 f
+  max0/max_sub_0/MA_out[1] (MA4_0)                        0.00       8.25 f
+  max0/max_sub_4/H0[1] (MA4_1)                            0.00       8.25 f
+  max0/max_sub_4/U13/Y (INVX8)                            0.06       8.30 r
+  max0/max_sub_4/U151/Y (AO22X4)                          0.12       8.42 r
+  max0/max_sub_4/U18/Y (INVX4)                            0.04       8.46 f
+  max0/max_sub_4/U149/Y (OAI31X2)                         0.13       8.59 r
+  max0/max_sub_4/U75/Y (OR2X6)                            0.12       8.71 r
+  max0/max_sub_4/U76/Y (NAND3X8)                          0.04       8.75 f
+  max0/max_sub_4/U37/Y (INVX8)                            0.04       8.80 r
+  max0/max_sub_4/U124/Y (BUFX20)                          0.08       8.88 r
+  max0/max_sub_4/U11/Y (CLKMX2X6)                         0.16       9.03 f
+  max0/max_sub_4/U121/Y (AO22X4)                          0.15       9.18 f
+  max0/max_sub_4/U42/Y (AOI31X2)                          0.18       9.36 r
+  max0/max_sub_4/U41/Y (NAND4X4)                          0.09       9.45 f
+  max0/max_sub_4/U16/Y (NAND4X6)                          0.09       9.55 r
+  max0/max_sub_4/U15/Y (INVX16)                           0.07       9.61 f
+  max0/max_sub_4/U129/Y (MX2X6)                           0.16       9.77 f
+  max0/max_sub_4/MA_out[2] (MA4_1)                        0.00       9.77 f
+  max0/MA_out[2] (MA16)                                   0.00       9.77 f
+  U2412/Y (OR2X8)                                         0.14       9.91 f
+  U2353/Y (CLKINVX12)                                     0.03       9.94 r
+  U4332/Y (OAI211X2)                                      0.07      10.01 f
+  U2123/Y (OA21X4)                                        0.16      10.17 f
+  U2095/Y (NAND2X6)                                       0.05      10.21 r
+  U2445/Y (NAND4X4)                                       0.09      10.30 f
+  U2418/Y (CLKINVX8)                                      0.08      10.38 r
+  U2417/Y (NAND2X8)                                       0.05      10.43 f
+  U2419/Y (CLKINVX12)                                     0.05      10.48 r
+  U2171/Y (INVX20)                                        0.06      10.53 f
+  U2390/Y (OAI2BB2XL)                                     0.26      10.80 r
+  MA_p_r_reg[0]/D (DFFRX2)                                0.00      10.80 r
+  data arrival time                                                 10.80
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.10      10.90
+  MA_p_r_reg[0]/CK (DFFRX2)                               0.00      10.90 r
+  library setup time                                     -0.10      10.80
+  data required time                                                10.80
+  --------------------------------------------------------------------------
+  data required time                                                10.80
+  data arrival time                                                -10.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
