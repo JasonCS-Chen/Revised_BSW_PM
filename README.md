@@ -20,7 +20,7 @@ Sum left and right half values of PEs, and shift to right or down if one side is
 
 Shift the PEs according to the following FSM instead of the current cycle shift signal.
 
-![圖片](https://github.com/JasonCS-Chen/Revised_BSW_PM/assets/83828178/f0839b9a-3d03-4e3b-b7d5-d524f4da459a)
+![Photo](https://github.com/JasonCS-Chen/Revised_BSW_PM/blob/main/branch_prediction.jpg)
 
 
 **c. Power Management**
