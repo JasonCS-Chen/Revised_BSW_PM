@@ -4,7 +4,7 @@ This repo is the Software (Python) and Hardware (Verilog) implementations of the
 
 This work is for the 111-2 Special Project, and is based on the 110-2 ICD final project and the 111-1 Special Project.
 
-Previos Work: <https://github.com/JasonCS-Chen/Revised_BSW.git>
+Previous Work: <https://github.com/JasonCS-Chen/Revised_BSW.git>
 
 Advisor: Prof. Yi-Chang Lu, National Taiwan University
 
