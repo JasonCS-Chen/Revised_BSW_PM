@@ -1,5 +1,7 @@
 # Verilog implementation
 
+To only test the functionality, the Verilog codes are with the parameters (PE, R, Q) = (16 ↘<sub>-2</sub> 12 every 16 Tc, 64, 48).
+
 You can run the Verilog codes with the following commands (10 testcases are provided, Tc = 10ns):
 
 To source the license,
